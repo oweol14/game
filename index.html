@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Select Difficulty</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/index2.css">
+</head>
+<body>
+    <div class="difficulty-container">
+        <h1 class="blinking">SELECT DIFFICULTY</h1>
+        <div class="difficulty-options">
+            <button class="difficulty-btn easy" onclick="selectDifficulty('easy')">
+                EASY
+                <span class="desc">Chill & Fun</span>
+            </button>
+            <button class="difficulty-btn medium" onclick="selectDifficulty('medium')">
+                MEDIUM
+                <span class="desc">Some Challenge</span>
+            </button>
+            <button class="difficulty-btn hard" onclick="selectDifficulty('hard')">
+                HARD
+                <span class="desc">For Pros Only!</span>
+            </button>
+        </div>
+    </div>
+
+    <script>
+        function selectDifficulty(level) {
+            window.location.href = `quiz.php?difficulty=${level}`;
+        }
+    </script>
+</body>
+</html>
